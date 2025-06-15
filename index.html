@@ -8,6 +8,30 @@
 </head>
 <body>
     <h1>Welcome to the Charity Water Game Prototype</h1>
+    <!-- Game overlay for start, win, and game over screens -->
+    <div id="overlay">
+        <div id="overlay-content">
+            <h2 id="overlay-title">Charity Water Game</h2>
+            <p id="overlay-message">Deliver water to all the homes. Avoid dirty droplets!</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+    <!-- Game reset overlay -->
+    <div id="reset-overlay" style="display:none;">
+        <div id="reset-content">
+            <h2>Play Again?</h2>
+            <button id="reset-btn">Restart Game</button>
+        </div>
+    </div>
+    <!-- Win animation container -->
+    <div id="win-animation" style="display:none;"></div>
+    <!-- Game board container -->
+    <div id="game-board"></div>
+    <div id="scoreboard">
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 0</span>
+        <span id="lives">Lives: 3</span>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
